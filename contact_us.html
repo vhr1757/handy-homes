@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style_contact_us.css">
+</head>
+<body>
+    <div class="container">
+    <h2>Contact Us:</h2>
+    <form action="submit_contact.php" method="POST">
+        Full Name:
+        <input type="text" id="name" name="name" required><br><br>
+
+        Email:
+        <input type="email" id="email" name="email" required><br><br>
+
+        Phone Number:
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+
+        Date of Birth:
+        <input type="date" id="dob" name="dob"><br><br>
+
+        Query Type:
+        <select id="query-type" name="query_type">
+            <option value="General">General Inquiry</option>
+            <option value="Support">Support</option>
+            <option value="Feedback">Feedback</option>
+        </select><br><br>
+
+        Your Message:<br>
+        <textarea id="message" name="message" rows="4" cols="40" required></textarea><br><br>
+
+        Attach a File:
+        <input type="file" id="file" name="file"><br><br>
+
+
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+</body>
+</html>
