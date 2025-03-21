@@ -91,7 +91,13 @@ h1{
 }
 
 .Trending-services {
-    width: 300px;
+    width: 540px;
+    margin-left: 160px;
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 365px;
+    padding: 10px;
+    text-align: center;
 }
 
 .intro-image{
