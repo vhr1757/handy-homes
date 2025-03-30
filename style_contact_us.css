@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: centers;
+}
+.container{
+    background-color: white;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    width: 450px;
+    padding: 20px;
+}
+input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 2px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+button{
+    background-color:#504d4d;
+    color: white;
+    box-shadow: black;
+    border: 0px;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+}
+button:hover{
+    background-color:rgb(59, 148, 59);
+}
