@@ -78,9 +78,18 @@ button{
     border: 0px;
     border-radius: 5px;
     text-align: center;
-    width: 100%;
+    width: 20%;
     height: 30px;
 }
 button:hover{
     background-color:rgb(48, 50, 48);
+}
+
+.footer{
+    text-align: center;
+    color: azure;
+    background-color: #343131;
+    display: block;
+    height: 30px;
+    margin-top: 200px;
 }

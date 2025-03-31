@@ -24,7 +24,7 @@ body {
     margin-right: 50px;
 }
 .search-bar{
-    text-align: left;
+    text-align: center;
     font-size: 20px;
     color: #7e7979;
     float: right;
@@ -74,11 +74,13 @@ body {
 
 .service-heading {
     margin: 0;
+    font-size: 46px;
     font-weight: bold;
 }
 
 .service-price {
     margin-top: 5px;
+    font-size: small;
     font-weight: bold;
 }
 
@@ -117,7 +119,7 @@ body {
     background-color: #1d1c1c;
 }
 
-.haircut{
+.services{
     border: 0px solid black;
     background: rgba(255, 255, 255, 0.5);
     padding: 20px;
@@ -127,13 +129,56 @@ body {
     text-align: center;
 }
 
-.massages-pedicure{
-    border: 0px solid black;
-    background: rgba(255, 255, 255, 0.5);
+.trending-services {
+    position: fixed;
+    left: 0;
+    top: 100px;
+    width: 250px;
+    height: 530px;
+    background-color: #504d4d;
     padding: 20px;
-    box-shadow: 0 0 10px grey;
-    border-radius: 20px;
-    width: 700px;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 65px;
     text-align: center;
+}
+
+.trending-services h2 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.navbar-ver {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar-ver li {
+    margin: 10px 0;
+}
+
+.navbar-ver li a {
+    display: block;
+    padding: 10px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    background-color: #7e7979;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.navbar-ver li a:hover {
+    background-color: #a9a9a9;
+}
+
+.footer{
+    text-align: center;
+    color: azure;
+    background-color: #343131;
+    display: block;
+    height: 30px;
+    margin-top: 200px;
 }
 
