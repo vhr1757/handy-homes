@@ -1,0 +1,142 @@
+* {
+    font-family: Verdana, sans-serif;
+}
+
+.container {
+    border: 0;
+}
+
+.logo {
+    height: 70px;
+    width: 230px;
+}
+
+.city {
+    text-align: center;
+    font-size: 20px;
+    color: #343131;
+    float: right;
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 8px;
+    margin-right: 50px;
+}
+
+.search-bar {
+    text-align: left;
+    font-size: 20px;
+    color: #7e7979;
+    float: right;
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 8px;
+    margin-right: 50px;
+}
+
+.nav-bar {
+    list-style-type: none;
+    clear: right;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #504d4d;
+}
+
+.nav-bar li a {
+    padding: 15px;
+    font-size: 15px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.nav-bar li a:hover {
+    background-color: #7e7979;
+}
+
+.nav-bar li {
+    float: left;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #504d4d, rgb(161, 161, 150));
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.booking-container {
+    background: white;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #444;
+    font-size: 18px;
+}
+
+input,
+select,
+textarea {
+    padding: 14px;
+    margin-top: 8px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 18px;
+    width: 100%;
+    transition: border 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #504d4d;
+    outline: none;
+}
+
+button {
+    margin-top: 30px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #504d4d;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: rgb(161, 161, 150);
+    transform: scale(1.05);
+}

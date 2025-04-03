@@ -85,8 +85,8 @@
     background-color: #7e7979;
     border: 0px solid #7e7979;
     border-radius: 20px;
-    height: 34px;
-    font-size: large;
+    box-shadow:2px 4px 2px 3px black;
+    transform: scale(1.05);
 }
 
 .content-container {
