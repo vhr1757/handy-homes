@@ -2,6 +2,10 @@
     font-family: Verdana, sans-serif;
 }
 
+.body {
+    cursor: url('images/cursor.cur'), auto;
+}
+
 .container {
     border: 0;
 }

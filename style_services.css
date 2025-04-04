@@ -6,6 +6,7 @@ body {
     background: linear-gradient(to bottom right, #d3d3d3, #a9a9a9);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    cursor: url('images/cursor.cur'), auto;
 }
 
 .logo {
