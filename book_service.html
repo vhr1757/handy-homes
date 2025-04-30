@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Service</title>
+    <link rel="stylesheet" href="style_booking_form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lilita+One&family=Viga&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header style="background-image: linear-gradient(to bottom right, #504d4d, rgb(161, 161, 150));">
+        <div>
+            <a href="index.html" target="_self">
+                <img src="images/logo.jpg" alt="Company_logo" class="logo">
+
+            </a>
+            <input class="search-bar" placeholder="Search for services" type="search">
+            <select class="city" title="City">
+                <option>Anand</option>
+                <option>Vadodra</option>
+                <option>Ahmedabad</option>
+                <option>Rajkot</option>
+                <option>Surat</option>
+            </select>
+        </div>
+
+        <br>
+
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <div class="trending-services">
+            <h2>Trending Services</h2>
+            <nav>
+                <ul class="navbar-ver">
+                    <li><a href="women_beauty.html#full_massage">Women Full body massage</a></li>
+                    <li><a href="men_and_kids_salon.html#haircut_men">Men Haircut</a></li>
+                    <li><a href="reparing.html#ac_repair">A/C Appliances Repair</a></li>
+                    <li><a href="cleaning.html#toilet_cleaning">Toilet Cleaning</a></li>
+                    <li><a href="cleaning.html#painting">Wall Painting</a></li>
+                </ul>
+            </nav>
+        </div>
+    <div class="booking-container">
+        <h1>Book a Service</h1>
+        <form>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="city">City</label>
+            <select id="city" name="city" required>
+                <option value="Anand">Anand</option>
+                <option value="Vadodra">Vadodra</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Rajkot">Rajkot</option>
+                <option value="Surat">Surat</option>
+            </select>
+
+            <label for="service">Select Service</label>
+            <select id="service" name="service" required>
+                <option value="TV Repair">TV Repair</option>
+                <option value="Refrigerator Repair">Refrigerator Repair</option>
+                <option value="Microwave Repair">Microwave Repair</option>
+                <option value="Washing Machine Repair">Washing Machine Repair</option>
+                <option value="Bathroom Cleaning">Bathroom Cleaning</option>
+                <option value="Sofa Cleaning">Sofa Cleaning</option>
+            </select>
+
+            <label for="date">Preferred Date</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="address">Address</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+            <a href="booked_services.html">
+                <p class="button">Confirm Booking</p>
+            </a>
+        </form>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Handy Home</h3>
+                <p>Providing exceptional home services with care and quality.</p>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                        <a href="#" style="color: aliceblue;"><i class="fab fa-facebook"></i></a>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                        <a href="#" style="color: aliceblue;"><i class="fab fa-twitter"></i></a>
+
+                    </a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                        <a href="#" style="color: aliceblue;"><i class="fab fa-instagram"></i></a>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                        <a href="#" style="color: aliceblue;"><i class="fab fa-linkedin"></i></a>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="terms_conditions.html">Terms & Conditions</a></li>
+                    <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Email: support@handyhome.com</p>
+                <p>Phone: +91 123-456-7890</p>
+                <p>Address: 123 Service Lane, Anand, Gujarat</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy; Handy-Homes Pvt. Ltd. 2022-25 - All rights reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>

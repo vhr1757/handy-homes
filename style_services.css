@@ -1,0 +1,466 @@
+* {
+    font-family: Verdana, sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    cursor: url('images/cursor.cur'), auto;
+}
+
+head{
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.2); 
+}
+
+.logo {
+    height: 4.375rem;
+    width: 14.375rem;
+}
+
+.city {
+    text-align: center;
+    font-size: 1.25rem;
+    color: #1a1a1a;
+    float: right;
+    width: 15.625rem;
+    height: 2.5rem;
+    border-radius: 0.625rem;
+    margin-top: 0.5rem;
+    margin-right: 3.125rem;
+    border: 0.115rem solid black;
+    font-family: lilita one;
+}
+
+.search-bar {
+    text-align: center;
+    font-size: 1.25rem;
+    color: black;
+    float: right;
+    width: 15.625rem;
+    height: 2.5rem;
+    border-radius: 0.625rem;
+    margin-top: 0.5rem;
+    margin-right: 3.125rem;
+    border: 0.115rem solid black;
+}
+
+.nav-bar {
+    list-style-type: none;
+    clear: right;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.nav-bar li a {
+    padding: 0.9375rem;
+    font-size: 0.9375rem;
+    font-family: lilita one;
+    font-size: 1.1rem;
+    display: block;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+    transition: text-decoration 1s ease;
+}
+
+.nav-bar li a:hover {
+    background-color: #7e7979;
+    text-decoration: underline 2px #f39c12;
+}
+
+.nav-bar li {
+    float: left;
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3.125rem;
+    margin-bottom: 6.25rem;
+    flex-direction: column;
+}
+
+.trend h2{
+    font-family: lilita one;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    transition: text-decoration 1s ease;
+}
+
+.trend h2:hover{
+    color: #800000;
+    text-decoration: underline 4px #f39c12;
+    transform: scaleX(1.02);
+}
+.services-grid {
+    margin-top: -1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+    gap: 2rem;
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
+  
+.service-item {
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 4px solid transparent;
+    transition: transform 0.5s ease
+}
+
+.service-item::after {
+    content: ''; 
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 0; 
+    height: 3px; 
+    transition: width 0.4s ease; 
+}
+
+.service-item:hover {
+    transform: scale(1.01);
+    animation: pulse-glow 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+    0% { box-shadow: 0 0 5px #f39c12, 0 0 0 4px#f39c12; }
+    100% { box-shadow: 0 0 15px #800000, 0 0 0 2px #800000 }
+}
+  
+.icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.icon:hover{
+    transform: rotate3d(0,1,0,180deg);
+}
+.service-item h3{
+    font-family: lilita one;
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+
+.service-item p{
+    font-size: 1rem;
+}
+.service-item p{
+    font-family: crimson text;
+}
+
+.service-item p:hover, .service-item h3:hover{
+    color:#800000;
+}
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.service-heading {
+    margin: 0;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "GRAD" 0;
+}
+
+.services h1{
+    font-family: lilita one;
+    font-weight: lighter;
+    transition: text-decoration 1s ease;
+}
+
+.services h1:hover{
+    text-decoration: underline #f39c12;
+}
+.text-container p{
+    font-family: crimson text;
+}
+
+.service-price {
+    margin-top: 0.3125rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.services-img {
+    height: 9.375rem;
+    width: 9.6875rem;
+    transition: 0.5s;
+    border-radius: 1.25rem;
+}
+
+.services-img:hover {
+    transform: scale(1.02); 
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.button {
+    display: block;
+    margin-top: 0.625rem;
+    border: 0.0625rem solid black;
+    padding: 0.625rem;
+    text-align: center;
+    width: 3.75rem;
+    background-color: #343131;
+    font-size: 0.75rem;
+    color: white;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #1d1c1c;
+    text-decoration: none;
+}
+
+.services {
+    border: 0rem solid black;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 1.25rem;
+    box-shadow: 0 0 0.625rem grey;
+    border-radius: 1.25rem;
+    width: 43.75rem;
+    text-align: center;
+}
+
+.navbar-ver {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar-ver li {
+    margin: 0.625rem 0;
+}
+
+.navbar-ver li a {
+    display: block;
+    padding: 0.625rem;
+    font-size: 0.875rem;
+    color: white;
+    text-decoration: none;
+    background-color: #7e7979;
+    border-radius: 0.625rem;
+    transition: 0.3s;
+    font-family: crimson text;
+    font-size: 0.95rem;
+}
+
+.navbar-ver li a:hover {
+    background-color: #a9a9a9;
+}
+.footer {
+    background-color: #1a1a1a; /* Black background */
+    color: #d3d3d3;
+    padding: 3rem 2rem;
+    text-align: left;
+    margin-top: 6.25rem;
+    font-family: 'Crimson Text', serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 75rem;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 15rem;
+}
+
+.footer-section h3 {
+    font-family: 'Lilita One', sans-serif;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: lighter;
+    transition: text-decoration 0.3s ease;
+}
+
+.footer-section h3:hover {
+    text-decoration: underline #f39c12;
+}
+
+.footer-section p {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-icon {
+    width: 2rem;
+    height: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    color: #d3d3d3;
+    text-decoration: none;
+    font-size: 0.9375rem;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #f39c12;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 0.0625rem solid #333;
+}
+
+.footer-bottom p {
+    font-size: 0.875rem;
+    color: #999;
+}
+
+@media (max-width: 768px) {
+    .city, .search-bar {
+        float: none;
+        margin: 0.5rem auto;
+        width: 15.625rem;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-bar li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .service-container {
+        flex-direction: column;
+        margin-left: 1rem;
+        width: 25rem;
+    }
+
+    .services {
+        width: 43.75rem;
+    }
+
+    .trending-services {
+        position: static;
+        width: 15.625rem;
+        margin: 1rem auto;
+        border-radius: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        height: 4.375rem;
+        width: 14.375rem;
+    }
+
+    .service-heading {
+        font-size: 1.5rem;
+    }
+
+    .services-img {
+        height: 9.375rem;
+        width: 9.6875rem;
+    }
+
+    .services-img:hover {
+        height: 9.5625rem;
+        width: 9.875rem;
+    }
+
+    .button {
+        width: 3.75rem;
+        font-size: 0.75rem;
+    }
+
+    .services {
+        width: 90%;
+    }
+
+    .service-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 2rem;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .footer-links {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 2rem 1rem;
+    }
+
+    .footer-section h3 {
+        font-size: 1.25rem;
+    }
+
+    .footer-section p, .footer-links a {
+        font-size: 0.875rem;
+    }
+
+    .social-icon {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}

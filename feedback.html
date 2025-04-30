@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="style_feedback.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <header style="background-color: #1a1a1a;">
+            <div>
+                <a href="index.html" target="_self">
+                    <img src="images/logo.jpg" alt="Company_logo" class="logo">
+                </a>
+                <input class="search-bar" placeholder="Search for services" type="search">
+                <select class="city" title="City">
+                    <option>Anand</option>
+                    <option>Vadodra</option>
+                    <option>Ahmedabad</option>
+                    <option>Rajkot</option>
+                    <option>Surat</option>
+                </select>
+            </div>
+
+            <br>
+
+            <nav>
+                <ul class="nav-bar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <h2 class="feedbacktitle">FEEDBACK FORM</h2>
+        <form action="submit_feedback.html" method="GET">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label>How would you rate our website?</label><br>
+            <select>
+                <option>Excellent</option>
+                <option>Good</option>
+                <option>Average</option>
+                <option>Poor</option>
+            </select>
+            <br><br>
+
+            <label for="services">Which services did you use?</label><br>
+            <input type="checkbox" id="cleaning" name="services" value="Cleaning">
+            <label for="cleaning">Cleaning</label>
+            <input type="checkbox" id="repair" name="services" value="Repair">
+            <label for="repair">Repair</label>
+            <input type="checkbox" id="plumbing" name="services" value="Plumbing">
+            <label for="plumbing">Plumbing</label><br><br>
+
+            <label for="suggestions">Any suggestions?</label><br>
+            <textarea id="suggestions" name="suggestions" rows="4" cols="40"></textarea><br><br>
+
+            <label for="contact">Would you like us to contact you?</label>
+            <select id="contact" name="contact">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select><br><br>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Handy Home</h3>
+                    <p>Providing exceptional home services with care and quality.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                            <a href="#" style="color: aliceblue;"><i class="fab fa-facebook"></i></a>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                            <a href="#" style="color: aliceblue;"><i class="fab fa-twitter"></i></a>
+
+                        </a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                            <a href="#" style="color: aliceblue;"><i class="fab fa-instagram"></i></a>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                            <a href="#" style="color: aliceblue;"><i class="fab fa-linkedin"></i></a>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="about_us.html">About Us</a></li>
+                        <li><a href="contact_us.html">Contact Us</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                        <li><a href="terms_conditions.html">Terms & Conditions</a></li>
+                        <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Email: support@handyhome.com</p>
+                    <p>Phone: +91 123-456-7890</p>
+                    <p>Address: 123 Service Lane, Anand, Gujarat</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright &copy; Handy-Homes Pvt. Ltd. 2022-25 - All rights reserved</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
